@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="gameViewModel"
+            type="com.fernandohenry.jokenpo.views.game.GameViewModel" />
+    </data>
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/background_game_jokenpo">
+        <TextView
+            android:id="@+id/tvPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player1"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/tvEscolhaPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcoes"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btPedraPlayer1"
+                android:onClick="@{() -> gameViewModel.onClickedCellAt(0,1)}"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/pedra" />
+            <Button
+                android:id="@+id/btPapelPlayer1"
+                android:onClick="@{() -> gameViewModel.onClickedCellAt(1,1)}"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/papel" />
+            <Button
+                android:id="@+id/btTesouraPlayer1"
+                android:onClick="@{() -> gameViewModel.onClickedCellAt(2,1)}"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/tesoura" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvPlayer2"
+            android:paddingTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player2"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/tvEscolhaPlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcoes"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btPedraPlayer2"
+                android:onClick="@{() -> gameViewModel.onClickedCellAt(0,2)}"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/pedra" />
+            <Button
+                android:id="@+id/btPapelPlayer2"
+                android:onClick="@{() -> gameViewModel.onClickedCellAt(1,2)}"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/papel" />
+            <Button
+                android:id="@+id/btTesouraPlayer2"
+                android:onClick="@{() -> gameViewModel.onClickedCellAt(2,2)}"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/tesoura" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

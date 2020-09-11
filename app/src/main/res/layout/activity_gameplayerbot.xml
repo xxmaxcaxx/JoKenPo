@@ -11,7 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/background_game_jokenpo">
     <TextView
-        android:id="@+id/tvOpcoes"
+        android:id="@+id/tvOpcoesBot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/opcoes"
@@ -23,17 +23,17 @@
         android:gravity="center"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/btPedra"
+            android:id="@+id/btPedraBot"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/pedra" />
         <Button
-            android:id="@+id/btPapel"
+            android:id="@+id/btPapelBot"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/papel" />
         <Button
-            android:id="@+id/btTesoura"
+            android:id="@+id/btTesouraBot"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/tesoura" />
@@ -68,12 +68,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <ImageView
-            android:id="@+id/ivJogadaPlayer"
+            android:id="@+id/ivJogadaPlayerBot"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="0.5"/>
         <ImageView
-            android:id="@+id/ivJogadaPC"
+            android:id="@+id/ivJogadaPCBot"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="0.5"/>
@@ -85,7 +85,7 @@
         android:textColor="@color/white"
         android:textSize="32sp"/>
     <TextView
-        android:id="@+id/tvResultado"
+        android:id="@+id/tvResultadoBot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/venceu" />

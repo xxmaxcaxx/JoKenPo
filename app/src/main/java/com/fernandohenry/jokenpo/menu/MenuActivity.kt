@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import com.fernandohenry.jokenpo.views.GamePlayerBotActivity
 import com.fernandohenry.jokenpo.R
+import com.fernandohenry.jokenpo.views.GameActivity
 
 class MenuActivity : AppCompatActivity() {
     private var tvHeader: TextView? = null
@@ -42,9 +43,12 @@ class MenuActivity : AppCompatActivity() {
     }
 
     fun play(v: View?) {
-        startActivity(Intent(this, GamePlayerBotActivity::class.java))
+        startActivity(Intent(this, GameActivity::class.java))
     }
 
+    fun playBot(v: View?) {
+        startActivity(Intent(this, GamePlayerBotActivity::class.java))
+    }
     fun sair(v: View?) {
         finish()
     }

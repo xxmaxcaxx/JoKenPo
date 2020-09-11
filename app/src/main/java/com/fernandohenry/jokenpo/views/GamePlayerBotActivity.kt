@@ -32,10 +32,10 @@ class GamePlayerBotActivity : AppCompatActivity() {
 
         numeroAleatorio = Random()
         ivJogadaPlayer =
-            findViewById<View>(R.id.ivJogadaPlayer) as ImageView
-        ivJogadaPC = findViewById<View>(R.id.ivJogadaPC) as ImageView
-        tvResultado = findViewById<View>(R.id.tvResultado) as TextView
-        btPedra = findViewById<View>(R.id.btPedra) as Button
+            findViewById<View>(R.id.ivJogadaPlayerBot) as ImageView
+        ivJogadaPC = findViewById<View>(R.id.ivJogadaPCBot) as ImageView
+        tvResultado = findViewById<View>(R.id.tvResultadoBot) as TextView
+        btPedra = findViewById<View>(R.id.btPedraBot) as Button
         btPedra!!.setOnClickListener {
             ivJogadaPlayer!!.setImageDrawable(
                 ContextCompat.getDrawable(
@@ -45,7 +45,7 @@ class GamePlayerBotActivity : AppCompatActivity() {
             )
             realizaJogada(PEDRA)
         }
-        btPapel = findViewById<View>(R.id.btPapel) as Button
+        btPapel = findViewById<View>(R.id.btPapelBot) as Button
         btPapel!!.setOnClickListener {
             ivJogadaPlayer!!.setImageDrawable(
                 ContextCompat.getDrawable(
@@ -55,7 +55,7 @@ class GamePlayerBotActivity : AppCompatActivity() {
             )
             realizaJogada(PAPEL)
         }
-        btTesoura = findViewById<View>(R.id.btTesoura) as Button
+        btTesoura = findViewById<View>(R.id.btTesouraBot) as Button
         btTesoura!!.setOnClickListener {
             ivJogadaPlayer!!.setImageDrawable(
                 ContextCompat.getDrawable(
