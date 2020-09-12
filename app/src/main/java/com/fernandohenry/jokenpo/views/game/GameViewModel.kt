@@ -1,11 +1,16 @@
 package com.fernandohenry.jokenpo.views.game
 
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import android.widget.Button
 import androidx.databinding.ObservableArrayMap
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
+import com.fernandohenry.jokenpo.R
 import com.fernandohenry.jokenpo.models.Game
 import com.fernandohenry.jokenpo.models.Player
 import com.fernandohenry.jokenpo.utils.StringUtility.stringFromNumbers
+import com.fernandohenry.jokenpo.views.GameActivity
 
 class GameViewModel : ViewModel() {
     lateinit var cells: ObservableArrayMap<String, String>

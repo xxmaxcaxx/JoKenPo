@@ -42,19 +42,19 @@
                 android:onClick="@{() -> gameViewModel.onClickedCellAt(0,1)}"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/pedra" />
+                android:background="@drawable/button_custom_pedra" />
             <Button
                 android:id="@+id/btPapelPlayer1"
                 android:onClick="@{() -> gameViewModel.onClickedCellAt(1,1)}"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/papel" />
+                android:background="@drawable/button_custom_papel" />
             <Button
                 android:id="@+id/btTesouraPlayer1"
                 android:onClick="@{() -> gameViewModel.onClickedCellAt(2,1)}"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/tesoura" />
+                android:background="@drawable/button_custom_tesoura" />
         </LinearLayout>
         <TextView
             android:id="@+id/tvPlayer2"
@@ -81,19 +81,19 @@
                 android:onClick="@{() -> gameViewModel.onClickedCellAt(0,2)}"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/pedra" />
+                android:background="@drawable/button_custom_pedra" />
             <Button
                 android:id="@+id/btPapelPlayer2"
                 android:onClick="@{() -> gameViewModel.onClickedCellAt(1,2)}"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/papel" />
+                android:background="@drawable/button_custom_papel" />
             <Button
                 android:id="@+id/btTesouraPlayer2"
                 android:onClick="@{() -> gameViewModel.onClickedCellAt(2,2)}"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/tesoura" />
+                android:background="@drawable/button_custom_tesoura" />
         </LinearLayout>
     </LinearLayout>
 </layout>

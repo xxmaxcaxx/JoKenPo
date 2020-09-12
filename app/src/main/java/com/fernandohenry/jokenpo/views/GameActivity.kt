@@ -1,14 +1,12 @@
 package com.fernandohenry.jokenpo.views
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Button
-import android.widget.Toast
-import android.widget.Toast.LENGTH_LONG
 import androidx.annotation.VisibleForTesting
-import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -19,6 +17,8 @@ import com.fernandohenry.jokenpo.views.game.GameBeginDialog
 import com.fernandohenry.jokenpo.views.game.GameEndDialog
 import com.fernandohenry.jokenpo.views.game.GameViewModel
 import kotlinx.android.synthetic.main.activity_game.*
+
+
 class GameActivity : AppCompatActivity() {
 
     lateinit var gameViewModel: GameViewModel
