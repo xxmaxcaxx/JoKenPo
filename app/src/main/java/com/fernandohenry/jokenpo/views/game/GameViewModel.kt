@@ -10,12 +10,15 @@ import com.fernandohenry.jokenpo.utils.StringUtility.stringFromNumbers
 class GameViewModel : ViewModel() {
     lateinit var cells: ObservableArrayMap<String, String>
     private lateinit var game: Game
+
     val winner: LiveData<Player>
         get() = game.winner
+
     fun init(player1: String, player2: String) {
         game = Game(player1, player2)
         cells = ObservableArrayMap()
     }
+
     fun onClickedCellAt(choice: Int, player: Int) {
         if (choice == 0 && player == 1) {
             game.player1.value = "Pedra"

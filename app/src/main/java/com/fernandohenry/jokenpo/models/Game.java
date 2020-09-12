@@ -16,22 +16,45 @@ public class Game {
     }
 
     public boolean hasGameEnded() {
+        if (player1.getValue() == "Pedra" && player2.getValue() == "Pedra") {
+            winner.setValue(null);
+            return true;
+        }
+        if (player1.getValue() == "Pedra" && player2.getValue() == "Papel") {
+            winner.setValue(player2);
+            return true;
+        }
        if (player1.getValue() == "Pedra" && player2.getValue() == "Tesoura") {
             winner.setValue(player1);
             return true;
         }
-        if (player1.getValue() == "Pedra" && player2.getValue() == "Pedra") {
-            winner.setValue(null);
+
+        if (player1.getValue() == "Papel" && player2.getValue() == "Pedra") {
+            winner.setValue(player1);
             return true;
         }
         if (player1.getValue() == "Papel" && player2.getValue() == "Papel") {
             winner.setValue(null);
             return true;
         }
+        if (player1.getValue() == "Papel" && player2.getValue() == "Tesoura") {
+            winner.setValue(player2);
+            return true;
+        }
+
+        if (player1.getValue() == "Tesoura" && player2.getValue() == "Pedra") {
+            winner.setValue(player2);
+            return true;
+        }
+        if (player1.getValue() == "Tesoura" && player2.getValue() == "Papel") {
+            winner.setValue(player1);
+            return true;
+        }
         if (player1.getValue() == "Tesoura" && player2.getValue() == "Tesoura") {
             winner.setValue(null);
             return true;
         }
+
         return false;
     }
 
