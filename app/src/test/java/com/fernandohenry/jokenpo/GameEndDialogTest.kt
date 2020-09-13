@@ -1,7 +1,6 @@
 package com.fernandohenry.jokenpo
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.rule.ActivityTestRule
 import androidx.test.runner.AndroidJUnitRunner
 import com.fernandohenry.jokenpo.models.Player
@@ -16,10 +15,10 @@ import org.junit.Test
 class GameEndDialogTest : AndroidJUnitRunner() {
     @Rule
     @JvmField
-    var activityRule: ActivityScenarioRule<GameActivity> =
-        ActivityScenarioRule(GameActivity::class.java)
+    var activityRule: ActivityTestRule<GameActivity> =
+        ActivityTestRule(GameActivity::class.java)
     private fun givenGameEnded() {
-        activityRule.scenario
+        activityRule.activity.onGameWinnerChanged(Player("Fernando", "Papel"))
     }
     @Test
     @Throws(Exception::class)
