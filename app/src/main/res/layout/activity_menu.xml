@@ -25,18 +25,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btPlay"
-            android:text="Jogar"
+            android:text="@string/jogar_com_bot"
             android:layout_marginBottom="16dp"
             android:background="@drawable/botao_customizado"
             android:textColor="#FFF"
-            android:onClick="play" />
+            android:onClick="playBot" />
 
         <Button
             android:layout_below="@+id/btPlay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btRegras"
-            android:text="Regras"
+            android:text="@string/jogar_player_x_player"
             android:layout_marginBottom="16dp"
             android:background="@drawable/botao_customizado"
             android:textColor="#FFF"

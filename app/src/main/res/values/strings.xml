@@ -18,4 +18,6 @@
     <string name="game_end_dialog_headline">The winner is</string>
     <string name="player1">Player1</string>
     <string name="player2">Player2</string>
+    <string name="jogar_com_bot">Jogar com Bot</string>
+    <string name="jogar_player_x_player">Jogar Player x Player</string>
 </resources>
